@@ -2,46 +2,46 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#17132b"><title>هلو پوز | مدیریت فروش</title>
+<meta name="theme-color" content="#17132b"><title>هلو پوز</title>
 <style>
-:root{color-scheme:dark;--bg:#100d1d;--panel:#1c1830;--line:#40365c;--text:#f8f5ff;--muted:#b5accb;--purple:#a58aff;--green:#38d6a0;--red:#ff7188;--yellow:#ffd06a}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0,#39265d,transparent 35%),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif}.wrap{max-width:1050px;margin:auto;padding:18px}.top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:16px}.brand{font-size:25px;font-weight:900}.brand span{color:var(--purple)}.pill{border:1px solid #286c57;color:var(--green);border-radius:25px;padding:8px 12px;font-size:12px}.notice{background:#352b1d;border:1px solid #66502b;color:#ffe5aa;border-radius:12px;padding:12px;margin-bottom:15px;font-size:12px;line-height:1.8}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}.stat,.panel{background:linear-gradient(145deg,var(--panel),#191529);border:1px solid var(--line);border-radius:16px;padding:15px}.stat small,.muted,label{color:var(--muted)}.stat strong{display:block;font-size:22px;margin-top:8px}.layout{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel h2{font-size:17px;margin:0 0 14px}.field{margin:10px 0}.field label{display:block;font-size:12px;margin-bottom:7px}input{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:13px;color:var(--text);font:inherit;outline:none}input:focus{border-color:var(--purple)}.amount{background:var(--bg);border:1px solid var(--line);border-radius:13px;text-align:center;padding:14px;margin:12px 0}.amount small{color:var(--muted)}.amount strong{display:block;font-size:30px;margin-top:6px;direction:ltr}.keys{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.key,.btn{border:0;border-radius:10px;padding:12px;font:inherit;font-weight:bold;cursor:pointer}.key{background:#28213f;border:1px solid var(--line);color:var(--text);font-size:18px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.success{background:var(--green);color:#08281e}.fail{background:#542638;color:#ffe0e6}.pending{background:#58451f;color:#ffedbd}.secondary{background:#28213f;border:1px solid var(--line);color:var(--text)}.toolbar{display:flex;gap:8px;margin-bottom:10px}.toolbar input{flex:1;min-width:0}.list{display:flex;flex-direction:column;gap:8px;max-height:420px;overflow:auto}.tx{background:var(--bg);border:1px solid var(--line);border-radius:11px;padding:11px;display:flex;justify-content:space-between;align-items:center;gap:8px}.tx b{font-size:13px;display:block}.tx small{font-size:11px;color:var(--muted)}.tag{font-size:11px;padding:5px 8px;border-radius:20px;white-space:nowrap}.empty{text-align:center;color:var(--muted);padding:24px}.foot{text-align:center;color:var(--muted);font-size:11px;padding:18px}@media(max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}.wrap{padding:12px}.brand{font-size:21px}}@media print{body{background:white;color:black}.notice,.keys,.actions,.toolbar button{display:none}.panel,.stat{break-inside:avoid}}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% 0,#38245b,#100d1d 55%);color:#fff;font-family:Tahoma,Arial,sans-serif;min-height:100vh;display:grid;place-items:center;padding:18px}.terminal{width:min(100%,420px);background:#1d1930;border:1px solid #51416e;border-radius:24px;padding:22px;box-shadow:0 20px 70px #0008}.logo{text-align:center;font-size:25px;font-weight:bold;margin-bottom:5px}.logo span{color:#b69aff}.sub{text-align:center;color:#bdb2d2;font-size:12px;margin-bottom:20px}.warning{background:#382d1d;border:1px solid #70562e;color:#ffe4a5;padding:10px;border-radius:11px;font-size:11px;line-height:1.8;margin-bottom:17px}.label{display:block;color:#c9bfdc;font-size:12px;margin:13px 0 7px}input{width:100%;background:#100d1d;border:1px solid #51416e;border-radius:12px;padding:14px;color:#fff;font:inherit;font-size:18px;outline:none}input:focus{border-color:#b69aff}.amount{font-size:28px;text-align:center;font-weight:bold;direction:ltr}.pin{text-align:center;letter-spacing:12px;font-size:24px}.hint{font-size:10px;color:#a99dbd;margin-top:6px}.pay,.print{width:100%;border:0;border-radius:12px;padding:14px;font:inherit;font-weight:bold;cursor:pointer;margin-top:15px}.pay{background:linear-gradient(90deg,#8d6be8,#b69aff);color:#160f27}.print{background:#302744;border:1px solid #51416e;color:white}.receipt{display:none;margin-top:18px;background:#fff;color:#17121f;border-radius:12px;padding:18px;font-family:Tahoma,Arial,sans-serif}.receipt h3{text-align:center;margin:0 0 12px}.receipt p{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed #bbb;padding:7px 0;font-size:12px}.receipt .status{text-align:center;font-weight:bold;font-size:18px;color:#087b52;border:0;display:block}.receipt .foot{text-align:center;font-size:10px;line-height:1.8}.error{color:#ff9cac;font-size:12px;margin-top:10px;display:none}@media print{body{display:block;background:white;padding:0}.terminal{display:none}body.printing #receipt{display:block!important;width:72mm;margin:0 auto;box-shadow:none;border-radius:0}.receipt{display:block!important}body.printing{display:block}}
 </style></head>
-<body><main class="wrap">
-<header class="top"><div class="brand">🍑 هلو <span>پوز</span></div><div class="pill">● نسخه آزمایشی</div></header>
-<div class="notice">⚠️ این برنامه فقط برای ثبت و مدیریت آزمایشی تراکنش‌هاست؛ به بانک یا کارت‌خوان واقعی وصل نیست و پرداخت بانکی انجام نمی‌دهد.</div>
-<section class="stats">
-<div class="stat"><small>مجموع فروش موفق</small><strong id="total">۰ تومان</strong></div>
-<div class="stat"><small>تراکنش موفق</small><strong id="ok">۰</strong></div>
-<div class="stat"><small>تراکنش ناموفق</small><strong id="fail">۰</strong></div>
-<div class="stat"><small>در انتظار</small><strong id="wait">۰</strong></div>
+<body>
+<main class="terminal">
+<div class="logo">🍑 هلو <span>پوز</span></div><div class="sub">دستگاه پرداخت نمایشی</div>
+<div class="warning">⚠️ این فقط شبیه‌ساز است؛ به بانک یا کارت‌خوان واقعی وصل نیست و هیچ پرداختی انجام نمی‌دهد. رمز واردشده آزمایشی است و ذخیره نمی‌شود.</div>
+<label class="label" for="amount">مبلغ خرید (تومان)</label>
+<input id="amount" class="amount" inputmode="numeric" type="number" min="1" placeholder="مثلاً ۵۰۰۰۰">
+<label class="label" for="pin">رمز کارت آزمایشی</label>
+<input id="pin" class="pin" inputmode="numeric" type="password" maxlength="4" placeholder="••••" autocomplete="off">
+<div class="hint">هر رمز ۴ رقمی دلخواه؛ فقط برای نمایش آزمایشی.</div>
+<button class="pay" onclick="pay()">تأیید تراکنش آزمایشی</button>
+<div id="error" class="error">مبلغ و یک رمز ۴ رقمی آزمایشی وارد کن.</div>
+<section class="receipt" id="receipt">
+<h3>رسید هلو پوز</h3>
+<p><span>وضعیت</span><b>تراکنش آزمایشی موفق</b></p>
+<p><span>مبلغ</span><b id="rAmount">—</b></p>
+<p><span>شماره پیگیری</span><b id="rCode">—</b></p>
+<p><span>تاریخ</span><b id="rDate">—</b></p>
+<p class="status">✓ موفق (آزمایشی)</p>
+<div class="foot">این رسید بانکی نیست و پرداخت واقعی انجام نشده است.<br>هلو پوز</div>
 </section>
-<section class="layout">
-<div class="panel"><h2>🧾 ثبت تراکنش</h2>
-<div class="field"><label for="item">نام کالا یا شرح خرید</label><input id="item" placeholder="مثلاً جاکلیدی قلاب‌بافی"></div>
-<div class="amount"><small>مبلغ (تومان)</small><strong id="display">۰</strong></div>
-<div class="keys">
-<button class="key" onclick="digit('1')">۱</button><button class="key" onclick="digit('2')">۲</button><button class="key" onclick="digit('3')">۳</button>
-<button class="key" onclick="digit('4')">۴</button><button class="key" onclick="digit('5')">۵</button><button class="key" onclick="digit('6')">۶</button>
-<button class="key" onclick="digit('7')">۷</button><button class="key" onclick="digit('8')">۸</button><button class="key" onclick="digit('9')">۹</button>
-<button class="key" onclick="clearAmount()">پاک</button><button class="key" onclick="digit('0')">۰</button><button class="key" onclick="backspace()">⌫</button>
-</div>
-<div class="actions"><button class="btn success" onclick="add('موفق')">ثبت موفق</button><button class="btn fail" onclick="add('ناموفق')">ثبت ناموفق</button><button class="btn pending" style="grid-column:1/-1" onclick="add('در انتظار')">ثبت در انتظار</button></div>
-</div>
-<div class="panel"><h2>📋 تاریخچه تراکنش‌ها</h2>
-<div class="toolbar"><input id="search" placeholder="جستجوی کالا..." oninput="render()"><button class="btn secondary" onclick="exportCsv()">خروجی CSV</button></div>
-<div class="list" id="list"></div>
-<div class="actions"><button class="btn secondary" onclick="print()">چاپ</button><button class="btn secondary" onclick="clearAll()">پاک‌کردن تاریخچه</button></div>
-</div></section><div class="foot">هلو پوز · ابزار آزمایشی مدیریت فروش</div></main>
+<button id="printBtn" class="print" style="display:none" onclick="printReceipt()">🖨️ چاپ رسید</button>
+</main>
 <script>
-let amount='';let tx=[];try{tx=JSON.parse(localStorage.getItem('holoPosTx')||'[]')}catch(e){}
-const fmt=n=>Number(n||0).toLocaleString('fa-IR');
-function digit(n){if(amount.length<12)amount+=n;show()}function clearAmount(){amount='';show()}function backspace(){amount=amount.slice(0,-1);show()}function show(){document.getElementById('display').textContent=fmt(amount||0)}
-function save(){localStorage.setItem('holoPosTx',JSON.stringify(tx))}
-function add(status){let value=Number(amount);if(!value){alert('لطفاً مبلغ را وارد کن.');return}tx.unshift({item:document.getElementById('item').value.trim()||'خرید',amount:value,status,date:new Date().toLocaleString('fa-IR')});save();amount='';show();document.getElementById('item').value='';render()}
-function esc(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function render(){let ok=tx.filter(x=>x.status==='موفق');document.getElementById('total').textContent=fmt(ok.reduce((s,x)=>s+x.amount,0))+' تومان';document.getElementById('ok').textContent=fmt(ok.length);document.getElementById('fail').textContent=fmt(tx.filter(x=>x.status==='ناموفق').length);document.getElementById('wait').textContent=fmt(tx.filter(x=>x.status==='در انتظار').length);let q=document.getElementById('search').value.trim().toLowerCase();let rows=tx.filter(x=>x.item.toLowerCase().includes(q));document.getElementById('list').innerHTML=rows.length?rows.map(x=>'<div class="tx"><div><b>'+esc(x.item)+'</b><small>'+x.date+' · '+fmt(x.amount)+' تومان</small></div><span class="tag" style="background:'+(x.status==='موفق'?'#174a3d':x.status==='ناموفق'?'#542638':'#58451f')+'">'+x.status+'</span></div>').join(''):'<div class="empty">هنوز تراکنشی ثبت نشده است.</div>'}
-function clearAll(){if(confirm('همه تراکنش‌ها پاک شوند؟')){tx=[];save();render()}}
-function exportCsv(){let rows=[['شرح','مبلغ تومان','وضعیت','تاریخ'],...tx.map(x=>[x.item,x.amount,x.status,x.date])];let csv='\uFEFF'+rows.map(r=>r.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(',')).join('\n');let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download='holo-pos.csv';a.click();URL.revokeObjectURL(a.href)}
-render();show();
-</script></body></html>
+function pay(){
+ const amount=Number(document.getElementById('amount').value);
+ const pin=document.getElementById('pin').value;
+ const err=document.getElementById('error');
+ if(!amount||amount<1||!/^[0-9]{4}$/.test(pin)){err.style.display='block';return}
+ err.style.display='none';
+ document.getElementById('rAmount').textContent=amount.toLocaleString('fa-IR')+' تومان';
+ document.getElementById('rCode').textContent=String(Math.floor(100000+Math.random()*900000)).replace(/[0-9]/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]);
+ document.getElementById('rDate').textContent=new Date().toLocaleString('fa-IR');
+ document.getElementById('receipt').style.display='block';
+ document.getElementById('printBtn').style.display='block';
+ document.getElementById('pin').value='';
+}
+function printReceipt(){document.body.classList.add('printing');window.print();document.body.classList.remove('printing')}
+</script>
+</body></html>
