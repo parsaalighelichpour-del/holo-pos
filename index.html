@@ -27,6 +27,7 @@
 <div class="foot">این رسید بانکی نیست و پرداخت واقعی انجام نشده است.<br>هلو پوز</div>
 </section>
 <button id="printBtn" class="print" style="display:none" onclick="printReceipt()">🖨️ چاپ رسید</button>
+<button id="downloadBtn" class="print" style="display:none" onclick="downloadReceipt()">⬇️ دانلود رسید</button>
 </main>
 <script>
 function pay(){
@@ -39,9 +40,16 @@ function pay(){
  document.getElementById('rCode').textContent=String(Math.floor(100000+Math.random()*900000)).replace(/[0-9]/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]);
  document.getElementById('rDate').textContent=new Date().toLocaleString('fa-IR');
  document.getElementById('receipt').style.display='block';
- document.getElementById('printBtn').style.display='block';
+ document.getElementById('printBtn').style.display='block';document.getElementById('downloadBtn').style.display='block';
  document.getElementById('pin').value='';
 }
 function printReceipt(){document.body.classList.add('printing');window.print();document.body.classList.remove('printing')}
+function downloadReceipt(){
+ const receipt=document.getElementById('receipt').cloneNode(true);
+ receipt.style.display='block';
+ const html='<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>رسید هلو پوز</title><style>body{font-family:Tahoma,Arial,sans-serif;padding:20px;color:#17121f}.receipt{max-width:360px;margin:auto;border:1px solid #ddd;border-radius:12px;padding:18px}.receipt h3{text-align:center}.receipt p{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed #bbb;padding:7px 0;font-size:12px}.status{text-align:center;font-weight:bold;color:#087b52}.foot{text-align:center;font-size:10px;line-height:1.8;margin-top:14px}</style></head><body>'+receipt.outerHTML+'</body></html>';
+ const blob=new Blob([html],{type:'text/html;charset=utf-8'});
+ const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='holo-pos-receipt.html';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+}
 </script>
 </body></html>
